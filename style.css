@@ -5,7 +5,7 @@
 
 }
 body{
-    background-color: #000000;
+    background-color: #060605;
 }
 .header{
     position: fixed;
@@ -101,7 +101,7 @@ body{
 .image-mask {
     width: 70vw;
     height: 50vh;
-    background-image: url('img/pic.jpg'); 
+    background-image: url('img/pic2.jpg'); 
     background-size: cover;
     background-position: center;
     
