@@ -5,7 +5,7 @@
 
 }
 body{
-    background-color: #1f242d;
+    background-color: #000000;
 }
 .header{
     position: fixed;
@@ -98,6 +98,29 @@ body{
 
 }
 
+.image-mask {
+    width: 70vw;
+    height: 50vh;
+    background-image: url('img/pic.jpg'); 
+    background-size: cover;
+    background-position: center;
+    
+  
+    mask-repeat: no-repeat;
+    mask-position: center;
+    
+   
+    -webkit-mask-image: url('img/img1.png'); /* For WebKit-based browsers */
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+
+    background-color: #030009fa;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 20px cyan);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(224, 224, 235), 0 0 5px cyan;
+}
+
 /* Animation */
 /* animation: slideright 3s ease forwards; */
 @keyframes slideleft{
@@ -148,5 +171,19 @@ body{
     100%{
         transform: scale(1);
         opacity: 1;
+    }
+}
+@media screen and (max-width: 750px) {
+
+    .home{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        padding: 70px 10% 0;
     }
 }
